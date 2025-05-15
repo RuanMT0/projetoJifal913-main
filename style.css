@@ -3,3 +3,13 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  body{
+    height: 100vh;
+    display: flex;
+    background-image: url(fundo.png);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman';
+  }
