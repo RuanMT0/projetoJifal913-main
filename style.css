@@ -11,7 +11,7 @@ body {
     flex-direction: column;
     background-image: url("fundo.png");
     background-size: cover;        
-    background-repeat: no-repeat;           
+    background-repeat: no-repeat;          
     justify-content: center;
     background-position: center;
     align-items: center;
@@ -53,3 +53,5 @@ body {
     background-color: #e2e2e2;
     color: red;
 }
+
+/* epa
