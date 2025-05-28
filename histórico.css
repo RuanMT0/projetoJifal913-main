@@ -134,7 +134,8 @@ h1, h2 {
 
 @media (max-width: 1024px) {
     .card {
-        flex: 1 1 calc(50% - 40px); /* 2 cards por linha */
+        flex: 1 1 calc(50% - 40px); 
+        
     }
 }
 
