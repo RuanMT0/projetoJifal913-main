@@ -1,0 +1,227 @@
+:root {
+    --azul-principal: #0B284F;
+    --azul-secundario: #1B3A6F;
+    --azul-claro: #5476A3;
+    --branco-gelo: #F4F6F9;
+    --laranja-principal: #F57C00;
+    --laranja-claro: #FF9800;
+    --cinza-texto: #333333;
+    --cinza-claro: #555555;
+}
+*
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 10% auto;
+}
+.menu {
+    width: 100%;
+    height: 6%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: #1b3a6f;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 6vh;;
+}
+
+.menu .container {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-list {
+    margin: 10% auto;
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.menu-list a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    font-size: 16px;
+}
+
+.menu-list a:hover {
+    background-color: #f57c00;
+    color: white;
+}
+
+header h1 {
+    margin-top: 30px;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #333;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.sports-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.sports-section {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.sport-header {
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.sport-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.sport-subtitle {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.schedule-container {
+    overflow-x: hidden;
+}
+
+
+.schedule-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.schedule-item {
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.schedule-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.item-number {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.item-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.team-info {
+    font-weight: 600;
+    color: #333;
+}
+
+.vs-symbol {
+    font-weight: bold;
+    color: #ffae00;
+}
+
+@media (max-width: 768px) {
+    .menu .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-list {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .schedule-grid {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+
+    .sport-title {
+        font-size: 1.4rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+} /* <- Fechamento correto da media query */
+
+.sport-header-blue {
+    background: linear-gradient(45deg, var(--azul-principal), var(--azul-claro));
+}
+
+.sport-header-blue .sport-title,
+.sport-header-blue .sport-subtitle {
+    color: var(--laranja-principal);
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--azul-principal);
+    color: var(--branco-gelo);
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    border-top: 4px solid var(--laranja-principal);
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+.footer a {
+    color: var(--laranja-claro);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: var(--laranja-principal);
+    text-decoration: underline;
+}
