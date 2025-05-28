@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Modalidades Esportivas - JIFAL 2025</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f4fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        .logo img {
+            max-width: 120px;
+            height: auto;
+        }
+
+        .modalidades {
+            background-color: rgba(110, 166, 250, 0.15);
+            padding: 40px 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+
+        .modalidades h2 {
+            color: #1b3a6f;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+        }
+
+        .tipo-modalidade h3 {
+            color: #f57c00;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card-modalidade {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            flex: 1 1 300px;
+            max-width: 300px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            text-align: left;
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card-modalidade:hover {
+            transform: scale(1.03);
+        }
+
+        .card-modalidade h4 {
+            color: #1b3a6f;
+            margin-bottom: 12px;
+            font-size: 1.3em;
+        }
+
+        .card-modalidade p {
+            color: #333;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card-modalidade {
+                width: 90%;
+                max-width: none;
+            }
+        }
+
+        .rodape {
+            background-color: #1b3a6f;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+            border-radius: 12px 12px 0 0;
+            box-shadow: 0 -4px 14px rgba(0, 0, 0, 0.15);
+        }
+
+        .rodape a {
+            color: #f57c00;
+            text-decoration: none;
+        }
+
+        .rodape a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<section class="modalidades">
+    <h2>Modalidades Esportivas</h2>
+    
+    <header class="menu">
+        <div class="container">
+            <div class="logo">
+                <img src="./img/logo.png" alt="Logo JIFAL 2025">
+            </div>
+        </div>
+    </header>
+
+    <div class="tipo-modalidade">
+        <h3>Modalidades Coletivas</h3>
+        <div class="cards">
+            <div class="card-modalidade">
+                <h4>Futsal</h4>
+                <p>O futsal é uma modalidade dinâmica e rápida, praticada em quadras menores, com equipes de 5 jogadores. Exige grande controle de bola, agilidade e tomada de decisão em pouco tempo. O jogo é dividido em dois tempos de 20 minutos, com cronômetro parado em cada interrupção. As substituições são ilimitadas, permitindo alta intensidade durante toda a partida. É uma excelente ferramenta de formação técnica para o futebol de campo.</p>
+            </div>
+
+            <div class="card-modalidade">
+                <h4>Vôlei</h4>
+                <p>No voleibol, duas equipes com seis jogadores disputam pontos tentando fazer a bola tocar o chão adversário sem que ela toque o seu próprio. O jogo é dividido em sets, vencendo quem conquistar 3 sets antes do outro (melhor de cinco). A comunicação, o espírito de equipe e a estratégia são fundamentais. Os fundamentos principais incluem saque, passe, levantamento, ataque, bloqueio e defesa.</p>
+            </div>
+
+            <div class="card-modalidade">
+                <h4>Basquete</h4>
+                <p>O basquete é jogado por duas equipes de cinco jogadores, onde o objetivo é arremessar a bola na cesta do adversário. Cada cesta pode valer 1, 2 ou 3 pontos, dependendo da jogada. A partida é dividida em quatro tempos e envolve dribles, passes rápidos e muita movimentação. Além disso, a modalidade promove o raciocínio rápido, trabalho em equipe e resistência física.</p>
+            </div>
+
+            <div class="card-modalidade">
+                <h4>Handebol</h4>
+                <p>O handebol é jogado com as mãos, e cada equipe tem 7 jogadores (incluindo o goleiro). O objetivo é marcar gols arremessando a bola contra o gol adversário, movimentando-se por passes e dribles. O jogo é rápido, com bastante contato físico e constante movimentação. Cada tempo tem 30 minutos, e as substituições são permitidas livremente. O jogo exige força, agilidade e estratégia.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="tipo-modalidade">
+        <h3>Esportes Individuais</h3>
+        <div class="cards">
+            <div class="card-modalidade">
+                <h4>Atletismo</h4>
+                <p>O atletismo engloba diversas provas como corridas (velocidade, meio fundo, fundo), saltos (altura, distância, triplo, com vara) e arremessos (peso, disco, martelo, dardo). É a base do esporte olímpico moderno. Requer preparo físico, técnica e disciplina. Cada prova tem regras específicas, e os atletas se desafiam constantemente para superarem seus próprios limites.</p>
+            </div>
+
+            <div class="card-modalidade">
+                <h4>Xadrez</h4>
+                <p>O xadrez é um jogo de estratégia milenar onde o objetivo é dar o xeque-mate ao rei adversário. Cada jogador possui 16 peças e alternam movimentos em um tabuleiro de 64 casas. O jogo desenvolve o pensamento lógico, a memória, a paciência e a antecipação de cenários. Em competições, os atletas têm tempo controlado, o que exige decisões rápidas sob pressão.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="rodape">
+    <p><strong>Instituto Federal de Alagoas - Campus Arapiraca</strong></p>
+    <p>Desenvolvido por: Leandro, Ruan, Felype, Paulo, Gustavo e Ariel.</p>
+    <p>© 2025 - Todos os direitos reservados.</p>
+    <p>Contato: <a href="mailto:lab@aluno.ifal.edu.br">lab@aluno.ifal.edu.br</a></p>
+</footer>
+
+</body>
+</html>
