@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Modalidades Esportivas - JIFAL 2025</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -12,9 +13,49 @@
             padding: 0;
         }
 
-        .logo img {
-            max-width: 120px;
-            height: auto;
+        header.menu {
+            background-color: #1b3a6f;
+            padding: 20px 0;
+            color: white;
+        }
+
+        .menu .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .menu .logo img {
+    width: 160px; 
+    height: 150px; 
+}
+        nav {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .menu-list {
+            list-style: none;
+            display: inline-flex;
+            gap: 30px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu-list li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1em;
+            transition: color 0.3s ease;
+        }
+
+        .menu-list li a:hover {
+            color: #f57c00;
         }
 
         .modalidades {
@@ -52,12 +93,13 @@
             padding: 20px;
             flex: 1 1 300px;
             max-width: 300px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
             text-align: left;
             transition: transform 0.3s ease;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            min-height: 350px;
         }
 
         .card-modalidade:hover {
@@ -73,10 +115,47 @@
         .card-modalidade p {
             color: #333;
             font-size: 0.95em;
-            line-height: 1.6;
+            line-height: 1.5;
+            flex-grow: 1;
+        }
+
+        .botao-saiba-mais {
+            margin-top: 15px;
+            align-self: flex-start;
+            padding: 10px 16px;
+            background-color: #f57c00;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            text-decoration: none;
+        }
+
+        .botao-saiba-mais:hover {
+            background-color: #e16b00;
+            transform: translateY(-2px);
         }
 
         @media (max-width: 768px) {
+            .menu .container {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+
+            nav {
+                text-align: center;
+                width: 100%;
+            }
+
+            .menu-list {
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+
             .cards {
                 flex-direction: column;
                 align-items: center;
@@ -108,66 +187,94 @@
         }
     </style>
 </head>
-<body>
 
-<section class="modalidades">
-    <h2>Modalidades Esportivas</h2>
-    
+<body>
     <header class="menu">
         <div class="container">
             <div class="logo">
-                <img src="./img/logo.png" alt="Logo JIFAL 2025">
+                <img src="./img/logo.png" alt="Logo JIFAL 2025" />
             </div>
+            <nav>
+                <ul class="menu-list">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Programação</a></li>
+                    <li><a href="#">Modalidades</a></li>
+                    <li><a href="#">Equipes</a></li>
+                    <li><a href="#">Fotos</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Histórico</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <div class="tipo-modalidade">
-        <h3>Modalidades Coletivas</h3>
-        <div class="cards">
-            <div class="card-modalidade">
-                <h4>Futsal</h4>
-                <p>O futsal é uma modalidade dinâmica e rápida, praticada em quadras menores, com equipes de 5 jogadores. Exige grande controle de bola, agilidade e tomada de decisão em pouco tempo. O jogo é dividido em dois tempos de 20 minutos, com cronômetro parado em cada interrupção. As substituições são ilimitadas, permitindo alta intensidade durante toda a partida. É uma excelente ferramenta de formação técnica para o futebol de campo.</p>
-            </div>
+    <section class="modalidades">
+        <h2>Modalidades Esportivas</h2>
 
-            <div class="card-modalidade">
-                <h4>Vôlei</h4>
-                <p>No voleibol, duas equipes com seis jogadores disputam pontos tentando fazer a bola tocar o chão adversário sem que ela toque o seu próprio. O jogo é dividido em sets, vencendo quem conquistar 3 sets antes do outro (melhor de cinco). A comunicação, o espírito de equipe e a estratégia são fundamentais. Os fundamentos principais incluem saque, passe, levantamento, ataque, bloqueio e defesa.</p>
-            </div>
-
-            <div class="card-modalidade">
-                <h4>Basquete</h4>
-                <p>O basquete é jogado por duas equipes de cinco jogadores, onde o objetivo é arremessar a bola na cesta do adversário. Cada cesta pode valer 1, 2 ou 3 pontos, dependendo da jogada. A partida é dividida em quatro tempos e envolve dribles, passes rápidos e muita movimentação. Além disso, a modalidade promove o raciocínio rápido, trabalho em equipe e resistência física.</p>
-            </div>
-
-            <div class="card-modalidade">
-                <h4>Handebol</h4>
-                <p>O handebol é jogado com as mãos, e cada equipe tem 7 jogadores (incluindo o goleiro). O objetivo é marcar gols arremessando a bola contra o gol adversário, movimentando-se por passes e dribles. O jogo é rápido, com bastante contato físico e constante movimentação. Cada tempo tem 30 minutos, e as substituições são permitidas livremente. O jogo exige força, agilidade e estratégia.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="tipo-modalidade">
-        <h3>Esportes Individuais</h3>
-        <div class="cards">
-            <div class="card-modalidade">
-                <h4>Atletismo</h4>
-                <p>O atletismo engloba diversas provas como corridas (velocidade, meio fundo, fundo), saltos (altura, distância, triplo, com vara) e arremessos (peso, disco, martelo, dardo). É a base do esporte olímpico moderno. Requer preparo físico, técnica e disciplina. Cada prova tem regras específicas, e os atletas se desafiam constantemente para superarem seus próprios limites.</p>
-            </div>
-
-            <div class="card-modalidade">
-                <h4>Xadrez</h4>
-                <p>O xadrez é um jogo de estratégia milenar onde o objetivo é dar o xeque-mate ao rei adversário. Cada jogador possui 16 peças e alternam movimentos em um tabuleiro de 64 casas. O jogo desenvolve o pensamento lógico, a memória, a paciência e a antecipação de cenários. Em competições, os atletas têm tempo controlado, o que exige decisões rápidas sob pressão.</p>
+        <div class="tipo-modalidade">
+            <h3>Modalidades Coletivas</h3>
+            <div class="cards">
+                <div class="card-modalidade">
+                    <h4>Futsal</h4>
+                    <p>Esporte dinâmico com cinco jogadores por equipe, jogado em quadra fechada. Requer técnica,
+                        agilidade e trabalho em equipe.</p>
+                    <a class="botao-saiba-mais" href="https://pt.wikipedia.org/wiki/Futsal" target="_blank"
+                        rel="noopener noreferrer">Saiba mais</a>
+                </div>
+                <div class="card-modalidade">
+                    <h4>Vôlei</h4>
+                    <p>Jogo entre duas equipes de seis jogadores que tentam fazer a bola tocar o chão adversário. Foco em
+                        precisão, agilidade e cooperação.</p>
+                    <a class="botao-saiba-mais" href="https://pt.wikipedia.org/wiki/Voleibol" target="_blank"
+                        rel="noopener noreferrer">Saiba mais</a>
+                </div>
+                <div class="card-modalidade">
+                    <h4>Basquete</h4>
+                    <p>Esporte com cinco jogadores por lado. Objetivo: marcar pontos arremessando a bola em uma cesta.
+                        Exige velocidade e raciocínio tático.</p>
+                    <a class="botao-saiba-mais" href="https://pt.wikipedia.org/wiki/Basquetebol" target="_blank"
+                        rel="noopener noreferrer">Saiba mais</a>
+                </div>
+                <div class="card-modalidade">
+                    <h4>Handebol</h4>
+                    <p>Esporte rápido e intenso com sete jogadores por equipe. A bola é conduzida com as mãos e o objetivo é marcar gols.</p>
+                    <a class="botao-saiba-mais" href="https://pt.wikipedia.org/wiki/Handebol" target="_blank"
+                        rel="noopener noreferrer">Saiba mais</a>
+                </div>
             </div>
         </div>
-    </div>
-</section>
 
-<footer class="rodape">
-    <p><strong>Instituto Federal de Alagoas - Campus Arapiraca</strong></p>
-    <p>Desenvolvido por: Leandro, Ruan, Felype, Paulo, Gustavo e Ariel.</p>
-    <p>© 2025 - Todos os direitos reservados.</p>
-    <p>Contato: <a href="mailto:lab@aluno.ifal.edu.br">lab@aluno.ifal.edu.br</a></p>
-</footer>
+        <div class="tipo-modalidade">
+            <h3>Esportes Individuais</h3>
+            <div class="cards">
+                <div class="card-modalidade">
+                    <h4>Atletismo</h4>
+                    <p>Conjunto de provas como corridas, saltos e lançamentos. Foco em superação individual, resistência e técnica.</p>
+                    <a class="botao-saiba-mais" href="https://pt.wikipedia.org/wiki/Atletismo" target="_blank"
+                        rel="noopener noreferrer">Saiba mais</a>
+                </div>
+                <div class="card-modalidade">
+                    <h4>Xadrez</h4>
+                    <p>Jogo de estratégia entre dois oponentes. Estimula lógica, paciência, memória e tomada de decisão.</p>
+                    <a class="botao-saiba-mais" href="https://pt.wikipedia.org/wiki/Xadrez" target="_blank"
+                        rel="noopener noreferrer">Saiba mais</a>
+                </div>
+                <div class="card-modalidade">
+                    <h4>Natação</h4>
+                    <p>Esporte completo que exige técnica, força e resistência. Inclui provas com diversos estilos e distâncias.</p>
+                    <a class="botao-saiba-mais" href="https://pt.wikipedia.org/wiki/Nata%C3%A7%C3%A3o" target="_blank"
+                        rel="noopener noreferrer">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <footer class="rodape">
+        <p><strong>Instituto Federal de Alagoas - Campus Arapiraca</strong></p>
+        <p>Desenvolvido por: Leandro, Ruan, Felype, Paulo, Gustavo e Ariel.</p>
+        <p>© 2025 - Todos os direitos reservados.</p>
+        <p>Contato: <a href="mailto:lab@aluno.ifal.edu.br">lab@aluno.ifal.edu.br</a></p>
+    </footer>
 </body>
+
 </html>
