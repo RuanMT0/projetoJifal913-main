@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Modalidades Esportivas - JIFAL 2025</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+    <style>
+
+      header.menu {
+    background-color: #1b3a6f;
+    padding: 0px 0;
+    color: white;
+}
+
+        *
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 10% auto;
+}
+.menu {
+    width: 100%;
+    height: 6%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: #1b3a6f;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+.logo img {
+    height: 6vh;;
+}
+        .menu .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu-list {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+            margin: 0;
+        }
+
+        .menu-list a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 6px 14px;
+            border-radius: 5px;
+            transition: 0.3s ease;
+            font-size: 16px;
+        }
+
+        .menu-list a:hover {
+            background-color: #f57c00;
+            color: white;
+        }
+
+        .modalidades {
+            background-color: rgba(110, 166, 250, 0.15);
+            padding: 40px 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+
+        .modalidades h2 {
+            color: #1b3a6f;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+        }
+
+        .tipo-modalidade h3 {
+            color: #f57c00;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card-modalidade {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            flex: 1 1 300px;
+            max-width: 300px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            text-align: left;
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 350px;
+        }
+
+        .card-modalidade:hover {
+            transform: scale(1.03);
+        }
+
+        .card-modalidade h4 {
+            color: #1b3a6f;
+            margin-bottom: 12px;
+            font-size: 1.3em;
+        }
+
+        .card-modalidade p {
+            color: #333;
+            font-size: 0.95em;
+            line-height: 1.5;
+            flex-grow: 1;
+        }
+
+        .botao-saiba-mais {
+            margin-top: 15px;
+            align-self: flex-start;
+            padding: 10px 16px;
+            background-color: #f57c00;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            text-decoration: none;
+        }
+
+        .botao-saiba-mais:hover {
+            background-color: #e16b00;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+*
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 10% auto;
+}
+.menu {
+    width: 100%;
+    height: 6%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: #1b3a6f;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+.logo img {
+    height: 6vh;;
+}
+        .menu .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu-list {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+            margin: 0;
+        }
+
+        .menu-list a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 6px 14px;
+            border-radius: 5px;
+            transition: 0.3s ease;
+            font-size: 16px;
+        }
+
+        .menu-list a:hover {
+            background-color: #f57c00;
+            color: white;
+        }
+
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card-modalidade {
+                width: 90%;
+                max-width: none;
+            }
+        }
+
+        .rodape {
+            background-color: #1b3a6f;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+            border-radius: 12px 12px 0 0;
+            box-shadow: 0 -4px 14px rgba(0, 0, 0, 0.15);
+        }
+
+        .rodape a {
+            color: #f57c00;
+            text-decoration: none;
+        }
+
+        .rodape a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="menu">
+        <div class="container">
+            <div class="logo">
+                <img src="./img/logo.png" alt="Logo JIFAL 2025" />
+            </div>
+            <nav>
+                <ul class="menu-list">
+                        <li><a href="home-page.html">Início</a></li>
+                        <li><a href="programacao.html">Programação</a></li>
+                        <li><a href="modalidades.html">Modalidades</a></li>
+                        <li><a href="equipes.html">Equipes</a></li>
+                        <li><a href="http://127.0.0.1:5500/hist%C3%B3rico.html">Histórico</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="modalidades">
+        <h2>Modalidades Esportivas</h2>
+
+        <div class="tipo-modalidade">
+            <h3>Modalidades Coletivas</h3>
+            <div class="cards">
+                <div class="card-modalidade">
+                    <h4>Futsal</h4>
+                    <p>Esporte dinâmico com cinco jogadores por equipe, jogado em quadra fechada. Requer técnica,
+                        agilidade e trabalho em equipe.</p>
+                    <a class="botao-saiba-mais" href="https://pt.wikipedia.org/wiki/Futsal" target="_blank"
+                        rel="noopener noreferrer">Saiba mais</a>
+                </div>
+                <div class="card-modalidade">
+                    <h4>Vôlei</h4>
+                    <p>Jogo entre duas equipes de seis jogadores que tentam fazer a bola tocar o chão adversário. Foco em
+                        precisão, agilidade e cooperação.</p>
+                    <a class="botao-saiba-mais" href="https://pt.wikipedia.org/wiki/Voleibol" target="_blank"
+                        rel="noopener noreferrer">Saiba mais</a>
+                </div>
+                <div class="card-modalidade">
+                    <h4>Basquete</h4>
+                    <p>Esporte com cinco jogadores por lado. Objetivo: marcar pontos arremessando a bola em uma cesta.
+                        Exige velocidade e raciocínio tático.</p>
+                    <a class="botao-saiba-mais" href="https://pt.wikipedia.org/wiki/Basquetebol" target="_blank"
+                        rel="noopener noreferrer">Saiba mais</a>
+                </div>
+                <div class="card-modalidade">
+                    <h4>Handebol</h4>
+                    <p>Esporte rápido e intenso com sete jogadores por equipe. A bola é conduzida com as mãos e o objetivo é marcar gols.</p>
+                    <a class="botao-saiba-mais" href="https://pt.wikipedia.org/wiki/Handebol" target="_blank"
+                        rel="noopener noreferrer">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="tipo-modalidade">
+            <h3>Esportes Individuais</h3>
+            <div class="cards">
+                <div class="card-modalidade">
+                    <h4>Atletismo</h4>
+                    <p>Conjunto de provas como corridas, saltos e lançamentos. Foco em superação individual, resistência e técnica.</p>
+                    <a class="botao-saiba-mais" href="https://pt.wikipedia.org/wiki/Atletismo" target="_blank"
+                        rel="noopener noreferrer">Saiba mais</a>
+                </div>
+                <div class="card-modalidade">
+                    <h4>Xadrez</h4>
+                    <p>Jogo de estratégia entre dois oponentes. Estimula lógica, paciência, memória e tomada de decisão.</p>
+                    <a class="botao-saiba-mais" href="https://pt.wikipedia.org/wiki/Xadrez" target="_blank"
+                        rel="noopener noreferrer">Saiba mais</a>
+                </div>
+                <div class="card-modalidade">
+                    <h4>Natação</h4>
+                    <p>Esporte completo que exige técnica, força e resistência. Inclui provas com diversos estilos e distâncias.</p>
+                    <a class="botao-saiba-mais" href="https://pt.wikipedia.org/wiki/Nata%C3%A7%C3%A3o" target="_blank"
+                        rel="noopener noreferrer">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <p><strong>Instituto Federal de Alagoas - Campus Arapiraca</strong></p>
+        <p>Desenvolvido por: Leandro, Ruan, Felype, Paulo, Gustavo e Ariel.</p>
+        <p>© 2025 - Todos os direitos reservados.</p>
+        <p>Contato: <a href="mailto:lab@aluno.ifal.edu.br">lab@aluno.ifal.edu.br</a></p>
+    </footer>
+</body>
+
+</html>
